@@ -1,6 +1,6 @@
 {
   "name": "capacitor-plugin-firebase-in-app-messaging",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Add In-App Messaging to Ionic Apps",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -11,7 +11,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorCommunityFirebaseInAppMessaging.podspec"
+    "CapacitorPluginFirebaseInAppMessaging.podspec"
   ],
   "author": "David Brookes - Sure Petcare",
   "license": "MIT",
