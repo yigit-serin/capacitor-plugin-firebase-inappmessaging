@@ -1,11 +1,11 @@
-# @capacitor-community/firebase-in-app-messaging
+# capacitor-plugin-firebase-in-app-messaging
 
 Add In-App Messaging to Ionic Apps
 
 ## Install
 
 ```bash
-npm install @capacitor-community/firebase-in-app-messaging
+npm install capacitor-plugin-firebase-in-app-messaging
 npx cap sync
 ```
 
