@@ -9,29 +9,17 @@ npm install capacitor-plugin-firebase-in-app-messaging
 npx cap sync
 ```
 
-## API
+## Usage
 
-<docgen-index>
+To enable in-app messaging and start recieving content from Firebase, make sure you have also installed and initialised Firebase core, and Firebase analytics
 
-* [`echo(...)`](#echo)
+Instructions to enable debugging mode and to use the "Test on Device" feature are here [Get started with Firebase In-App Messaging](https://firebase.google.com/docs/in-app-messaging/get-started?platform=ios)
 
-</docgen-index>
-
-<docgen-api>
-<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
-
-### echo(...)
-
-```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+Supporting event listeners to react to interactions with content is a work in progress, but will eventually allow subscribing to: 
+```
+messageDismissed
+messageClicked
+impressionDetected
+displayError
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
-
---------------------
-
-</docgen-api>
