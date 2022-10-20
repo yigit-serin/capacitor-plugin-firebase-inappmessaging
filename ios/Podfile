@@ -9,7 +9,7 @@ end
 
 target 'Plugin' do
   capacitor_pods
-  pod 'Firebase/InAppMessaging', '~> 9.3.0'
+  pod 'Firebase/InAppMessaging', '~> 8.8.0'
 end
 
 target 'PluginTests' do
