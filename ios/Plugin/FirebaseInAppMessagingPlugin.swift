@@ -12,6 +12,7 @@ public class FirebaseInAppMessagingPlugin: CAPPlugin {
     
      @objc public override func load() {
          InAppMessaging.inAppMessaging().delegate=implementation
+         implementation.plugin = self
     }
     @objc func echo(_ call: CAPPluginCall) {
         let value = call.getString("value") ?? ""
