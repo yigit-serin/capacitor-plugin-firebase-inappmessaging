@@ -30,8 +30,16 @@ import FirebaseInAppMessaging
         
         if let url = actionURL {
             data["actionURL"] = url.absoluteString
-            if UIApplication.shared.canOpenURL(url) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            print("Firebase In-App Messaging: Attempting to open URL: \(url.absoluteString)")
+            let canOpen = UIApplication.shared.canOpenURL(url)
+            print("Firebase In-App Messaging: Can open URL: \(canOpen)")
+            
+            if canOpen {
+                UIApplication.shared.open(url, options: [:]) { success in
+                    print("Firebase In-App Messaging: URL open success: \(success)")
+                }
+            } else {
+                print("Firebase In-App Messaging: Cannot open URL. Make sure LSApplicationQueriesSchemes includes the necessary URL schemes in your app's Info.plist")
             }
         }
         
